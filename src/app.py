@@ -1,13 +1,14 @@
 from dash import Dash, html, Input, Output, dcc, callback, dash_table
 import plotly.express as px
 import pandas as pd
+import plotly.graph_objects as go
 
 #importing the data and filling the na values
 data_enquiry_dash = pd.read_csv(r"./Retail Osaa Enquiry Sheet.xlsx - 2023.csv")
 data_enquiry_dash.fillna("no data",inplace=True)
 
 app = Dash(__name__)
-server=app.server
+#server=app.server
 
 app.layout = html.Div(children=[
     
