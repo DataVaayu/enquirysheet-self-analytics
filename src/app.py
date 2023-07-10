@@ -8,7 +8,7 @@ data_enquiry_dash = pd.read_csv(r"./Retail Osaa Enquiry Sheet.xlsx - 2023.csv")
 data_enquiry_dash.fillna("no data",inplace=True)
 
 app = Dash(__name__)
-#server=app.server
+server=app.server
 
 app.layout = html.Div(children=[
     
