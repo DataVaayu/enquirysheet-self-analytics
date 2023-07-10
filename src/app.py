@@ -3,7 +3,7 @@ import plotly.express as px
 import pandas as pd
 
 #importing the data and filling the na values
-data_enquiry_dash = pd.read_csv(r"D:\All Data\desktop\Enquiry Sheet and Design\Excel Reports\Retail Osaa Enquiry Sheet.xlsx - 2023.csv")
+data_enquiry_dash = pd.read_csv(r"./Retail Osaa Enquiry Sheet.xlsx - 2023.csv")
 data_enquiry_dash.fillna("no data",inplace=True)
 
 app = Dash(__name__)
